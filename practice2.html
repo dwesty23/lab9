@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <h3>EECS_348_lab7_prac2</h3>
+        <style>
+            body{
+                font-family:'Courier New', Courier, monospace;
+                background-color: darkslategray;
+            }
+            img{
+                height: 200px;
+                width: 200px;
+                border-radius: 25px;
+                border: 2px grey solid;
+            }
+            a{
+                color: rgb(111, 88, 111);
+            }
+            #par{
+                border: 0px solid black;
+            }
+        </style>
+
+        <script>
+            function change_color(){
+                var border_R = document.getElementById("border_R").value;
+                var border_G = document.getElementById("border_G").value;
+                var border_B = document.getElementById("border_B").value;
+                var border_width = document.getElementById("border_width").value;
+                var bg_R = document.getElementById("bg_R").value;
+                var bg_G = document.getElementById("bg_G").value;
+                var bg_B = document.getElementById("bg_B").value;
+
+                var tag = document.getElementById("par");
+                tag.style.borderColor = `rgb(${border_R},${border_G},${border_B})`;
+                tag.style.borderWidth = border_width+"px"
+                tag.style.backgroundColor = `rgb(${bg_R},${bg_G},${bg_B})`;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Harry Styles Dummy Text</h1>
+        <p id="par">
+            Harry Styles rose to fame as a member of the British boy band One Direction, but since the band went on hiatus in 2016, he has established himself as a solo artist with a unique sound and style. He has released two critically acclaimed albums, "Harry Styles" in 2017 and "Fine Line" in 2019, which showcase his range as a songwriter and performer.
+
+            One of the reasons why Harry Styles is so popular is that he appeals to a broad audience. He has fans of all ages and backgrounds, and his music has a timeless quality that makes it appealing to people of all generations. 
+            
+            Another reason why Harry Styles is so highly regarded is his stage presence. He is known for his energetic and charismatic performances, which have earned him a reputation as one of the best live performers of his generation. He is also a fashion icon, known for his bold and unconventional style choices, which have inspired many people to embrace their individuality.
+            
+            Beyond his music and stage presence, Harry Styles is also admired for his personality and his dedication to his fans. He is known for being kind and gracious to everyone he meets, and he takes time to connect with his fans and show his appreciation for their support. He has also used his platform to promote important causes, such as climate change and mental health awareness.
+            
+            In conclusion, while it is subjective to say that Harry Styles is the best artist of all time, there is no denying that he has made a significant impact on the music industry and has won the hearts of millions of fans around the world. His unique sound, style, and personality have set him apart from his peers, and he has established himself as one of the most beloved and influential artists of his generation.
+        </p>
+
+        Border - Red(0-255): <input type="text" id="border_R" value=""> <br>
+        Border - Green(0-255): <input type="text" id="border_G" value=""> <br>
+        Border - Blue(0-255): <input type="text" id="border_B" value=""> <br>
+        Border Width: <input type="text" id="border_width" value=""> <br>
+        Background - Red(0-255): <input type="text" id="bg_R" value=""> <br>
+        Background - Green(0-255): <input type="text" id="bg_G" value=""> <br>
+        Background - Blue(0-255): <input type="text" id="bg_B" value=""> <br>
+        <button onclick="change_color()">Change the color!</button> <br>
+        
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
